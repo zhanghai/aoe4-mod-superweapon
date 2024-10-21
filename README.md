@@ -8,6 +8,8 @@ Add Siege Camp in campaign as a superweapon for the game.
 
 The Siege Camp is available at Imperial Age for 2000 wood, 2000 gold and 2000 stone. It comes with the Thunderous Barrage ability with a cooldown of 150 seconds. Currently there is no build limit for it.
 
+See also the PvP version at [zhanghai/aoe4-mod-superweapon-pvp](https://github.com/zhanghai/aoe4-mod-superweapon-pvp).
+
 ## License
 
     Copyright (C) 2024 Hai Zhang
