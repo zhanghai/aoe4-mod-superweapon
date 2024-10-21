@@ -1,4 +1,4 @@
-# AOE4 Mod: Superweapon
+# AoE4 Mod: Superweapon
 
 ![Mod image](assets/mod.png)
 
