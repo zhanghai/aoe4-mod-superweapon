@@ -1,0 +1,39 @@
+<instance version="4" override_type="merge" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1790715958" List.ParentItemID="1790715958">
+			<list name="requirement_table">
+				<template_reference name="required" value="requirements\required_not" List.ItemID="-8787604" List.ParentItemID="-8787604">
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-1833480180" List.ParentItemID="-1833480180">
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1293586649" List.ParentItemID="1293586649">
+									<instance_reference name="structure_name" value="ebps\races\japanese\buildings\building_siegetrebuchets_jpn" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="-1707159483" List.ParentItemID="-1707159483">
+			<list name="type_list">
+				<group name="type" List.ItemID="-193587623" List.ListAction="Append">
+					<enum name="interaction_type" value="deposit_relic" />
+					<int name="prefer_number" value="-1" overrideParent="True" />
+					<int name="max_number" value="1" overrideParent="True" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1017881840" List.ParentItemID="-1017881840">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\always_on_abilities\japanese\shinto_sacred_object_buff_jpn" List.ItemID="-608835558" List.ListAction="Append" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741838" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_siegetrebuchets_east" mod="d092883dd11f431c840d8cea71687d1b" />
+</instance>

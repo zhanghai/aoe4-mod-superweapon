@@ -1,0 +1,53 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions" removedIds="1542721695, -1670902736, -2078767207">
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-2042916875" List.ParentItemID="-2042916875">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="food" value="0" overrideParent="True" />
+					<float name="wood" value="2000" overrideParent="True" />
+					<float name="stone" value="2000" overrideParent="True" />
+					<float name="gold" value="2000" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="150" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1790715958" List.ParentItemID="1790715958">
+			<list name="requirement_table" removedIds="-2121402835">
+				<template_reference name="required" value="requirements\required_not" List.ItemID="-8787604" List.ParentItemID="-8787604">
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-1833480180" List.ParentItemID="-1833480180">
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1293586649" List.ParentItemID="1293586649">
+									<instance_reference name="structure_name" value="ebps\races\core\buildings\building_siegetrebuchets" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-64285297" List.ParentItemID="-64285297">
+			<file name="minimap_icon" value="minimap\wonder" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1520358506" List.ParentItemID="1520358506">
+			<float name="animator_scale" value="90" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="715232501" List.ParentItemID="715232501">
+			<float name="hitpoints" value="2000" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1017881840" List.ParentItemID="-1017881840">
+			<list name="abilities" removedIds="-589952557, -379336889">
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-1452601844" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\modal_abilities\core\thunderous_barrage" mod="d092883dd11f431c840d8cea71687d1b" List.ItemID="1683878038" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-679238978" List.ParentItemID="-679238978">
+			<group name="footprint_scale">
+				<float name="x" value="12" overrideParent="True" />
+				<float name="y" value="12" overrideParent="True" />
+			</group>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741850" />
+	<instance_reference name="parent_pbg" value="ebps\races\rogue\buildings\building_rogue_siegetrebuchets" />
+</instance>

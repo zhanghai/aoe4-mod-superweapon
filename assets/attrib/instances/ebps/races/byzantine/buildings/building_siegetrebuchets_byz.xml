@@ -1,0 +1,65 @@
+<instance version="4" override_type="merge" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1790715958" List.ParentItemID="1790715958">
+			<list name="requirement_table">
+				<template_reference name="required" value="requirements\required_not" List.ItemID="-8787604" List.ParentItemID="-8787604">
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-1833480180" List.ParentItemID="-1833480180">
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1293586649" List.ParentItemID="1293586649">
+									<instance_reference name="structure_name" value="ebps\races\byzantine\buildings\building_siegetrebuchets_byz" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1253681687" List.ParentItemID="1253681687">
+			<group name="on_construction_complete_state_tree_refs">
+				<string name="on_construction_complete_entity_state_tree_ref" value="field_stones_logic_byz\field_stones_extra_large_byz" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1017881840" List.ParentItemID="-1017881840">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\always_on_abilities\byzantine\varangian_landmark_aura_byz" List.ItemID="156845285" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="1899603879" List.ListAction="Append">
+			<bool name="update_on_upgrade_changed" value="False" />
+			<bool name="update_on_construction_complete" value="True" />
+			<list name="district_bonuses" overrideParent="True">
+				<template_reference name="district_bonus" value="district_bonus" comment="Cistern Influence" List.ItemID="-1301654940">
+					<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+						<list name="dynamic_requirements">
+						</list>
+						<list name="satisfying_entity_groups" overrideParent="True">
+							<group name="satisfying_entity_group" List.ItemID="1930303115">
+								<list name="satisfying_entities" overrideParent="True">
+									<instance_reference name="entity" value="ebps\races\byzantine\buildings\building_cistern_byz" overrideParent="True" List.ItemID="-1385812580" />
+									<instance_reference name="entity" value="ebps\races\byzantine\buildings\building_landmark_age2_cistern_byz" List.ItemID="-1013352188" />
+								</list>
+							</group>
+						</list>
+					</template_reference>
+					<uniqueid name="id" value="1073741825" />
+					<template_reference name="action_tree" value="state_tree_reference_info">
+						<state_tree_node name="ActionTree_OpeningBranch" value="cistern_influence_byz" overrideParent="True" />
+						<bool name="start_suspended" value="False" />
+					</template_reference>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="-126808878" List.ListAction="Append">
+			<float name="range_metres" value="0" overrideParent="True" />
+			<int name="generator_value" value="0" overrideParent="True" />
+			<bool name="disable_generation_on_spawn" value="False" />
+			<bool name="is_root_generator" value="False" />
+			<int name="district_palette_id" value="0" />
+			<list name="requirements">
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741830" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_siegetrebuchets_west" mod="d092883dd11f431c840d8cea71687d1b" />
+</instance>

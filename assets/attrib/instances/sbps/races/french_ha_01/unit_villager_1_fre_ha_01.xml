@@ -5,7 +5,7 @@
 				<group name="construction_group" List.ItemID="2050061922" List.ParentItemID="2050061922">
 					<list name="construction_items">
 						<group name="construction_item" comment="Siege Camp" List.ItemID="216832069" List.ListAction="Append">
-							<instance_reference name="ebp" value="ebps\races\french_ha_01\buildings\building_siege_camp_fre_ha_01" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+							<instance_reference name="ebp" value="ebps\races\french_ha_01\buildings\building_siegetrebuchets_fre_ha_01" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
 							<group name="ui_position">
 								<int name="ui_position_row" value="2" overrideParent="True" />
 								<int name="ui_position_column" value="1" overrideParent="True" />
@@ -14,7 +14,7 @@
 							</list>
 							<list name="alternate_ebps">
 							</list>
-							<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\villager_build_menu\age_4\build_siege_camp" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+							<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\villager_build_menu\age_4\build_siegetrebuchets" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
 							<template_reference name="ui_info_extended" value="tables\ui_info_ext" overrideParent="True">
 								<template_reference name="command_card_info" value="ui_command_card_info">
 									<group name="ui_position">
@@ -54,6 +54,8 @@
 							</list>
 							<state_tree_node name="additional_requirement_statetree" value="" overrideParent="True" />
 							<bool name="do_requirement_check_for_construction_on_existing_item" value="False" overrideParent="True" />
+							<float name="construction_range" value="0" />
+							<instance_reference name="construction_range_reticule" value="" />
 						</group>
 					</list>
 				</group>

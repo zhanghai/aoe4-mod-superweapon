@@ -1,0 +1,21 @@
+<instance version="4" override_type="merge" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1790715958" List.ParentItemID="1790715958">
+			<list name="requirement_table">
+				<template_reference name="required" value="requirements\required_not" List.ItemID="-8787604" List.ParentItemID="-8787604">
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-1833480180" List.ParentItemID="-1833480180">
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1293586649" List.ParentItemID="1293586649">
+									<instance_reference name="structure_name" value="ebps\races\malian\buildings\building_siegetrebuchets_mal" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741839" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_siegetrebuchets_middle_east" mod="d092883dd11f431c840d8cea71687d1b" />
+</instance>
