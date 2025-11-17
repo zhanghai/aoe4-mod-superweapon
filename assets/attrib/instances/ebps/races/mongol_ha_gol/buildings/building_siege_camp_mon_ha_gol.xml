@@ -1,4 +1,4 @@
-<instance version="6" override_type="merge" description="" template="ebps">
+<instance version="6" description="" template="ebps">
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1324482060" List.ParentItemID="1324482060">
 			<group name="time_cost">
@@ -11,14 +11,14 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1116699682" List.ParentItemID="1116699682">
 			<list name="race_type_list">
-				<instance_reference name="race_type" value="racebps\mongol" overrideParent="True" List.ItemID="1499129841" List.ParentItemID="1499129841" />
+				<instance_reference name="race_type" value="racebps\mongol_ha_gol" overrideParent="True" List.ItemID="1499129841" List.ParentItemID="1499129841" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1153783694" List.ParentItemID="-1153783694">
 			<enum name="subclass_type" value="MongolBuilding" overrideParent="True" />
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073741840" />
+	<uniqueid name="pbgid" value="1073741848" />
 	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_siege_camp" mod="d092883dd11f431c840d8cea71687d1b" />
 	<variant name="xp3">
 		<list name="extensions">
@@ -33,14 +33,14 @@
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-787035535" List.ParentItemID="-787035535">
 				<list name="race_type_list">
-					<instance_reference name="race_type" value="racebps\mongol" overrideParent="True" List.ItemID="2103749788" List.ParentItemID="2103749788" />
+					<instance_reference name="race_type" value="racebps\mongol_ha_gol" overrideParent="True" List.ItemID="2103749788" List.ParentItemID="2103749788" />
 				</list>
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="779036926" List.ParentItemID="779036926">
 				<enum name="subclass_type" value="MongolBuilding" overrideParent="True" />
 			</template_reference>
 		</list>
-		<uniqueid name="pbgid" value="1073741840" />
+		<uniqueid name="pbgid" value="1073741848" />
 		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_siege_camp" mod="d092883dd11f431c840d8cea71687d1b" />
 	</variant>
 </instance>

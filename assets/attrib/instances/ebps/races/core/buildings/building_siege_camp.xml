@@ -159,6 +159,7 @@
 			<locstring name="help_text_controller" value="0" />
 			<locstring name="extra_text_controller" value="0" />
 			<bool name="static_selection_bounds" value="False" />
+			<enum name="targeting_and_bandbox_selection_priority_controller" value="" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="99019721">
 			<bool name="automatic_fit_on_placement" value="False" />
@@ -378,6 +379,12 @@
 			<state_tree_node name="on_reach_invulnerable_min_cap_entity_state_tree_ref" value="" />
 			<state_tree_node name="on_reach_max_health_entity_state_tree_ref" value="" />
 			<bool name="can_be_damaged_by_ally" value="False" />
+			<enum_table name="percentage_reduction_armor_by_damage_type">
+				<float name="True Damage" value="0" />
+				<float name="Melee" value="0" />
+				<float name="Ranged" value="0" />
+				<float name="Fire" value="0" />
+			</enum_table>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="-1635747611">
 			<instance_reference name="hit_material" value="hit_material\stone" />
@@ -563,8 +570,6 @@
 			<list name="tier_group_list">
 				<list name="tier_group" List.ItemID="-499147087">
 					<group name="tier" List.ItemID="233460024">
-						<list name="tier_requirements">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\buildings\acre_siegecamp_ayy" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -581,6 +586,7 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 			</list>
@@ -801,6 +807,7 @@
 				<locstring name="help_text_controller" value="0" />
 				<locstring name="extra_text_controller" value="0" />
 				<bool name="static_selection_bounds" value="False" />
+				<enum name="targeting_and_bandbox_selection_priority_controller" value="" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-1283523120">
 				<bool name="automatic_fit_on_placement" value="False" />
@@ -1020,6 +1027,12 @@
 				<state_tree_node name="on_reach_invulnerable_min_cap_entity_state_tree_ref" value="" />
 				<state_tree_node name="on_reach_max_health_entity_state_tree_ref" value="" />
 				<bool name="can_be_damaged_by_ally" value="False" />
+				<enum_table name="percentage_reduction_armor_by_damage_type">
+					<float name="True Damage" value="0" />
+					<float name="Melee" value="0" />
+					<float name="Ranged" value="0" />
+					<float name="Fire" value="0" />
+				</enum_table>
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="384659903">
 				<instance_reference name="hit_material" value="hit_material\stone" />
@@ -1205,8 +1218,6 @@
 				<list name="tier_group_list">
 					<list name="tier_group" List.ItemID="2109255819">
 						<group name="tier" List.ItemID="-1616926912">
-							<list name="tier_requirements">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\buildings\acre_siegecamp_ayy" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -1223,6 +1234,7 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 				</list>
