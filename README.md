@@ -4,11 +4,9 @@
 
 [Get it on Age Mods](https://www.ageofempires.com/mods/details/285888/)
 
-Add Siege Camp in campaign as a superweapon for the game.
+Add Siege Camp in The Crucible as a superweapon for the game.
 
-The Siege Camp is available at Imperial Age for 2000 wood, 2000 gold and 2000 stone. It comes with the Thunderous Barrage ability with a cooldown of 150 seconds. Currently there is no build limit for it.
-
-See also the PvP version at [zhanghai/aoe4-mod-superweapon-pvp](https://github.com/zhanghai/aoe4-mod-superweapon-pvp).
+The Siege Camp is available at Imperial Age for 2000 wood, 2000 gold and 2000 stone. It comes with the Thunderous Barrage ability with a cost of 1000 stone and a cooldown of 150 seconds. Each player may build at most one Siege Camp.
 
 ## License
 

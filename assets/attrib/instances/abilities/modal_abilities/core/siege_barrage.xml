@@ -1,0 +1,20 @@
+<instance version="4" description="" template="abilities">
+	<group name="ability_bag">
+		<enum_table name="cost_to_player">
+			<float name="stone" value="1000" overrideParent="True" />
+		</enum_table>
+		<float name="recharge_time" value="150" overrideParent="True" />
+		<enum name="ui_group_cast_type" value="single" overrideParent="True" />
+		<list name="requirements_target" removedIds="663017379">
+		</list>
+		<group name="ui_info">
+			<locstring name="help_text" value="11233938" overrideParent="True" />
+		</group>
+		<list name="ui_contextual_info" removedIds="1866050145">
+		</list>
+		<list name="requirements" removedIds="-1231107024">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="1073741854" />
+	<instance_reference name="parent_pbg" value="abilities\modal_abilities\rogue\siege_barrage_rogue" />
+</instance>

@@ -18,6 +18,15 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1520358506" List.ParentItemID="1520358506">
 			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\rogue\buildings\building_rogue_siege_east" overrideParent="True" />
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-2078767207" List.ParentItemID="-2078767207">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-2051995876" List.ParentItemID="-2051995876">
+					<group name="tier" List.ItemID="-1982526804" List.ParentItemID="-1982526804">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rogue\buildings\building_rogue_siege_east" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="1073741851" />
 	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_siegetrebuchets" mod="d092883dd11f431c840d8cea71687d1b" />
