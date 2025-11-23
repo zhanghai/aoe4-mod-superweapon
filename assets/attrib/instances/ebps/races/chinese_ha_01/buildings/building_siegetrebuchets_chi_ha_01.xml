@@ -2,17 +2,84 @@
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1790715958" List.ParentItemID="1790715958">
 			<list name="requirement_table">
-				<template_reference name="required" value="requirements\required_not" List.ItemID="-8787604" List.ParentItemID="-8787604">
+				<template_reference name="required" value="requirements\required_not" List.ItemID="-2013503094" List.ParentItemID="-2013503094">
 					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-1833480180" List.ParentItemID="-1833480180">
-							<list name="requirements">
-								<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1293586649" List.ParentItemID="1293586649">
-									<instance_reference name="structure_name" value="ebps\races\chinese_ha_01\buildings\building_siegetrebuchets_chi_ha_01" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
-								</template_reference>
-							</list>
+						<template_reference name="required" value="requirements\required_structure" List.ItemID="-53836531" List.ParentItemID="-53836531">
+							<instance_reference name="structure_name" value="ebps\races\chinese_ha_01\buildings\building_siegetrebuchets_chi_ha_01" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
 						</template_reference>
 					</list>
 				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="194366753" List.ParentItemID="194366753">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\chinese_ha_01" List.ItemID="228880174" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="-1707159483" List.ParentItemID="-1707159483">
+			<list name="type_list">
+				<group name="type" List.ItemID="2072354475" List.ListAction="Append">
+					<enum name="interaction_type" value="official_building_reserved_chi" overrideParent="True" />
+					<int name="prefer_number" value="-1" overrideParent="True" />
+					<int name="max_number" value="-1" overrideParent="True" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1017881840" List.ParentItemID="-1017881840">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\always_on_abilities\chinese\building_generate_tax_chi" List.ItemID="-1322458446" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="912191370" List.ParentItemID="912191370">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\chinese\unit_siege_chi" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-371881673" List.ParentItemID="-371881673">
+			<list name="spawn_items">
+				<group name="spawn_item" List.ItemID="112804713" List.ParentItemID="112804713">
+					<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_springald_champion_chi_ha_01" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="254314458" List.ParentItemID="254314458">
+					<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_giant_nest_of_bees_chi_ha_01" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_siegetrebuchets\produce_siegetrebuchets_giant_nest_of_bees_chi" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+				</group>
+			</list>
+			<state_tree_node name="production_item_completed_openingbranch" value="building_production_item_completed_chi" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="-1723780915" List.ListAction="Append">
+			<bool name="update_on_upgrade_changed" value="False" />
+			<bool name="update_on_construction_complete" value="True" />
+			<list name="district_bonuses" overrideParent="True">
+				<template_reference name="district_bonus" value="district_bonus" comment="population" List.ItemID="2116701626">
+					<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+						<list name="dynamic_requirements" overrideParent="True">
+						</list>
+						<list name="satisfying_entity_groups" overrideParent="True">
+							<group name="satisfying_entity_group" comment="Landmark Academy" List.ItemID="1433342081">
+								<list name="satisfying_entities">
+									<instance_reference name="entity" value="ebps\races\chinese\buildings\building_landmark_age1_academy_chi\building_landmark_age1_academy_control_chi" overrideParent="True" List.ItemID="-362368576" />
+								</list>
+							</group>
+						</list>
+					</template_reference>
+					<uniqueid name="id" value="1073741831" />
+					<template_reference name="action_tree" value="state_tree_reference_info">
+						<state_tree_node name="ActionTree_OpeningBranch" value="chinese_influence" overrideParent="True" />
+						<bool name="start_suspended" value="False" />
+					</template_reference>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="366440014" List.ListAction="Append">
+			<float name="range_metres" value="0" overrideParent="True" />
+			<int name="generator_value" value="0" overrideParent="True" />
+			<bool name="disable_generation_on_spawn" value="False" />
+			<bool name="is_root_generator" value="False" />
+			<int name="district_palette_id" value="0" />
+			<list name="requirements">
 			</list>
 		</template_reference>
 	</list>

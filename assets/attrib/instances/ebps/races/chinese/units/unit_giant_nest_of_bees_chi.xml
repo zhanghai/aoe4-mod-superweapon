@@ -1,0 +1,55 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1564013" List.ParentItemID="-1564013">
+			<float name="entity_scale" value="150" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="452643752" List.ParentItemID="452643752">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="3000" overrideParent="True" />
+					<float name="gold" value="3000" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1844382716" List.ParentItemID="1844382716">
+			<float name="hitpoints" value="600" overrideParent="True" />
+			<float name="regeneration" value="0.1" overrideParent="True" />
+			<bool name="regeneration_disabled" value="False" overrideParent="True" />
+			<enum_table name="percentage_reduction_armor_by_damage_type">
+				<float name="Ranged" value="95" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="-1856811533" List.ParentItemID="-1856811533">
+			<float name="personnel_pop" value="10" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1978278333" List.ParentItemID="1978278333">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\chinese" List.ItemID="-751238559" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-32812608" List.ParentItemID="-32812608">
+			<locstring name="screen_name" value="11269794" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1246076922" List.ParentItemID="1246076922">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-1842440573" List.ParentItemID="-1842440573">
+					<list name="weapon_table" removedIds="233697903">
+						<group name="weapon" List.ItemID="-1783920008" List.ParentItemID="-1783920008">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\chinese\weapon_giant_nest_of_bees_chi" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="1611895176" List.ParentItemID="1611895176">
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="4" overrideParent="True" />
+			</enum_table>
+			<instance_reference name="navigation_agent_info" value="navigation\agent_info\default_siege" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741906" />
+	<instance_reference name="parent_pbg" value="ebps\races\chinese\units\unit_nest_of_bees_4_chi" />
+</instance>

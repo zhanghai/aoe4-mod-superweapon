@@ -1,0 +1,25 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="811590333" List.ParentItemID="811590333">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\units\unit_scorpion_3_mon" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1224301896" List.ParentItemID="1224301896">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\mongol" List.ItemID="1680844308" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-766205460" List.ParentItemID="-766205460">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="1058977672" List.ParentItemID="1058977672">
+					<group name="tier" List.ItemID="-617385585" List.ParentItemID="-617385585">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier3_scorpion_eng" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\mongol\unit_springald_champion_mon" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741881" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_springald_champion" mod="d092883dd11f431c840d8cea71687d1b" />
+</instance>

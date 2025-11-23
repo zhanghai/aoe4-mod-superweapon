@@ -1,0 +1,56 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="811590333" List.ParentItemID="811590333">
+			<float name="entity_scale" value="130" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="311123701" List.ParentItemID="311123701">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="1500" overrideParent="True" />
+					<float name="gold" value="1000" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1210690469" List.ParentItemID="-1210690469">
+			<float name="hitpoints" value="425" comment="Don't forget to adjust the Clocktower Springald on Chinese." overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Melee" value="6" overrideParent="True" />
+			</enum_table>
+			<enum_table name="percentage_reduction_armor_by_damage_type">
+				<float name="Ranged" value="85" overrideParent="True" />
+			</enum_table>
+			<float name="regeneration" value="0.2" overrideParent="True" />
+			<bool name="regeneration_disabled" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="-927567073" List.ParentItemID="-927567073">
+			<float name="personnel_pop" value="10" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="639154551" List.ParentItemID="639154551">
+			<locstring name="screen_name" value="11269527" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-587241534" List.ParentItemID="-587241534">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-1624532552" List.ParentItemID="-1624532552">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-746170489" List.ParentItemID="-746170489">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\weapon_springald_champion" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-1763078206" List.ParentItemID="-1763078206">
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="4" overrideParent="True" />
+			</enum_table>
+			<instance_reference name="navigation_agent_info" value="navigation\agent_info\default_siege" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="273517794" List.ParentItemID="273517794">
+			<string name="default_animation" value="setup\idle_teardown" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741858" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_springald_3" />
+</instance>

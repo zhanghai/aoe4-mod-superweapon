@@ -1,0 +1,27 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1152503433" List.ParentItemID="-1152503433">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\chinese\units\unit_mangonel_3_chi" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1843239910" List.ParentItemID="1843239910">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\japanese_ha_sen" List.ItemID="395726200" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-582767811" List.ParentItemID="-582767811">
+			<instance_reference name="schema" value="statemodel_schema\units\siege_weapon" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="35385129" List.ParentItemID="35385129">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1890826549" List.ParentItemID="-1890826549">
+					<group name="tier" List.ItemID="1871353587" List.ParentItemID="1871353587">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\japanese\units\tier3_mangonel_jpn" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741925" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_giant_mangonel" mod="d092883dd11f431c840d8cea71687d1b" />
+</instance>

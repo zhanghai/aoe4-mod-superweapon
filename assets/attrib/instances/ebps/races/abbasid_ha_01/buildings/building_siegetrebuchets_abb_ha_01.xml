@@ -2,14 +2,10 @@
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1790715958" List.ParentItemID="1790715958">
 			<list name="requirement_table">
-				<template_reference name="required" value="requirements\required_not" List.ItemID="-8787604" List.ParentItemID="-8787604">
+				<template_reference name="required" value="requirements\required_not" List.ItemID="-2013503094" List.ParentItemID="-2013503094">
 					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-1833480180" List.ParentItemID="-1833480180">
-							<list name="requirements">
-								<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1293586649" List.ParentItemID="1293586649">
-									<instance_reference name="structure_name" value="ebps\races\abbasid_ha_01\buildings\building_siegetrebuchets_abb_ha_01" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
-								</template_reference>
-							</list>
+						<template_reference name="required" value="requirements\required_structure" List.ItemID="-53836531" List.ParentItemID="-53836531">
+							<instance_reference name="structure_name" value="ebps\races\abbasid_ha_01\buildings\building_siegetrebuchets_abb_ha_01" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
 						</template_reference>
 					</list>
 				</template_reference>
@@ -28,6 +24,31 @@
 					</template_reference>
 				</template_reference>
 			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="194366753" List.ParentItemID="194366753">
+			<list name="unit_type_list">
+				<enum name="unit_type" value="golden_age_tier_1_building_abb" List.ItemID="869814377" List.ListAction="Append" />
+				<enum name="unit_type" value="golden_age_tier_2_building_abb" List.ItemID="-25693997" List.ListAction="Append" />
+			</list>
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\abbasid_ha_01" List.ItemID="-1386136371" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1017881840" List.ParentItemID="-1017881840">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\always_on_abilities\abbasid_ha_01\passives\golden_age_bonus_1_abb_ha_01" List.ItemID="1999016725" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-371881673" List.ParentItemID="-371881673">
+			<list name="spawn_items">
+				<group name="spawn_item" List.ItemID="112804713" List.ParentItemID="112804713">
+					<instance_reference name="squad" value="sbps\races\abbasid_ha_01\unit_springald_champion_abb_ha_01" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="254314458" List.ParentItemID="254314458">
+					<instance_reference name="squad" value="sbps\races\abbasid_ha_01\unit_giant_mangonel_abb_ha_01" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+				</group>
+			</list>
+			<state_tree_node name="production_item_completed_openingbranch" value="building_production_item_completed_abb_ha" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="1875590968" List.ListAction="Append">
 			<bool name="update_on_upgrade_changed" value="False" />

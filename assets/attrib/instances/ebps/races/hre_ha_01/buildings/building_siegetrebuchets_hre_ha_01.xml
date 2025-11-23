@@ -2,14 +2,10 @@
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1790715958" List.ParentItemID="1790715958">
 			<list name="requirement_table">
-				<template_reference name="required" value="requirements\required_not" List.ItemID="-8787604" List.ParentItemID="-8787604">
+				<template_reference name="required" value="requirements\required_not" List.ItemID="-2013503094" List.ParentItemID="-2013503094">
 					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-1833480180" List.ParentItemID="-1833480180">
-							<list name="requirements">
-								<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1293586649" List.ParentItemID="1293586649">
-									<instance_reference name="structure_name" value="ebps\races\hre_ha_01\buildings\building_siegetrebuchets_hre_ha_01" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
-								</template_reference>
-							</list>
+						<template_reference name="required" value="requirements\required_structure" List.ItemID="-53836531" List.ParentItemID="-53836531">
+							<instance_reference name="structure_name" value="ebps\races\hre_ha_01\buildings\building_siegetrebuchets_hre_ha_01" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
 						</template_reference>
 					</list>
 				</template_reference>
@@ -29,9 +25,27 @@
 				</template_reference>
 			</list>
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="194366753" List.ParentItemID="194366753">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\hre_ha_01" List.ItemID="-1899407155" List.ListAction="Append" />
+			</list>
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1017881840" List.ParentItemID="-1017881840">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\timed_abilities\hre\influence_auto_repair_hre" List.ItemID="-2039860856" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="912191370" List.ParentItemID="912191370">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\hre\unit_siege_hre" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-371881673" List.ParentItemID="-371881673">
+			<list name="spawn_items">
+				<group name="spawn_item" List.ItemID="112804713" List.ParentItemID="112804713">
+					<instance_reference name="squad" value="sbps\races\hre_ha_01\unit_springald_champion_hre_ha_01" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="254314458" List.ParentItemID="254314458">
+					<instance_reference name="squad" value="sbps\races\hre_ha_01\unit_giant_mangonel_hre_ha_01" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+				</group>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="1184513784" List.ListAction="Append">

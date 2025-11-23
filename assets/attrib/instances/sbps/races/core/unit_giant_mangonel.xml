@@ -1,0 +1,35 @@
+<instance version="4" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="1627760721" List.ParentItemID="1627760721">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="1549991796" List.ParentItemID="1549991796">
+					<group name="info">
+						<locstring name="screen_name" value="11269796" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="108014063" List.ParentItemID="108014063">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="-515746888" List.ParentItemID="-515746888">
+					<instance_reference name="type" value="ebps\races\core\units\unit_giant_mangonel" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="1325491857" List.ParentItemID="1325491857">
+			<list name="requirement_table" removedIds="-6257051">
+				<template_reference name="required" value="requirements\required_cap" List.ItemID="-1458138345" List.ListAction="Append">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<float name="max_cap" value="1" overrideParent="True" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+				</template_reference>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741915" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_mangonel_3" />
+</instance>

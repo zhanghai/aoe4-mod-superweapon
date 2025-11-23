@@ -1,0 +1,17 @@
+<instance version="4" description="" template="weapon">
+	<group name="weapon_bag">
+		<string name="fx_munition_name" value="common\springald_fire" overrideParent="True" />
+		<group name="projectile">
+			<instance_reference name="projectile" value="ebps\projectiles\projectile_bolt_flaming_springald" overrideParent="True" />
+		</group>
+		<group name="reload">
+			<group name="duration">
+				<float name="max" value="1.625" overrideParent="True" />
+				<float name="min" value="1.625" overrideParent="True" />
+			</group>
+		</group>
+		<locstring name="ui_name" value="11269689" overrideParent="True" />
+	</group>
+	<uniqueid name="pbgid" value="1073741863" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\weapon_springald_champion" mod="d092883dd11f431c840d8cea71687d1b" />
+</instance>

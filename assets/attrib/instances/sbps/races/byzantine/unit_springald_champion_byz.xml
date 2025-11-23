@@ -1,0 +1,21 @@
+<instance version="4" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-2056667985" List.ParentItemID="-2056667985">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="1145231595" List.ParentItemID="1145231595">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="-560391668" List.ParentItemID="-560391668">
+					<instance_reference name="type" value="ebps\races\byzantine\units\unit_springald_champion_byz" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="204584753" List.ParentItemID="204584753">
+			<list name="squad_race_type_list">
+				<instance_reference name="squad_race_type" value="racebps\byzantine" List.ItemID="-1809308782" List.ListAction="Append" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741869" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_springald_champion" mod="d092883dd11f431c840d8cea71687d1b" />
+</instance>

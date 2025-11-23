@@ -1,0 +1,11 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1978278333" List.ParentItemID="1978278333">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\chinese_ha_01" overrideParent="True" List.ItemID="-751238559" List.ParentItemID="-751238559" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741908" />
+	<instance_reference name="parent_pbg" value="ebps\races\chinese\units\unit_giant_nest_of_bees_chi" mod="d092883dd11f431c840d8cea71687d1b" />
+</instance>

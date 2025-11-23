@@ -1,0 +1,56 @@
+<instance version="4" description="" template="menu">
+	<group name="menu_bag">
+		<template_reference name="ui_info" value="tables\ui_info">
+			<locstring name="screen_name" value="11156875" />
+			<locstring name="help_text" value="11156876" />
+			<file name="icon_name" value="races\common\buildings\siege_workshop" />
+			<string name="hotkey_name" value="access_secondary_ui_panel" />
+			<string name="tooltip_data_template" value="" />
+			<string name="hotkey_group" value="hud_game" />
+			<locstring name="screen_name_short" value="0" />
+			<locstring name="extra_text" value="0" />
+			<locstring name="brief_text" value="0" />
+		</template_reference>
+		<group name="ui_position">
+			<int name="ui_position_row" value="1" />
+			<int name="ui_position_column" value="2" />
+		</group>
+		<template_reference name="behaviour" value="options\menu\inline">
+			<int name="columns" value="1" />
+			<int name="rows" value="2" />
+			<bool name="auto_exit" value="True" />
+			<int name="exclusiveness_priority" value="0" />
+		</template_reference>
+		<list name="requirements">
+		</list>
+		<instance_reference name="hotkey_binding" value="" />
+		<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+			<template_reference name="command_card_info" value="">
+			</template_reference>
+			<template_reference name="quick_abilities_info" value="">
+			</template_reference>
+			<template_reference name="quick_commands_info" value="">
+			</template_reference>
+			<template_reference name="quick_formation_info" value="">
+			</template_reference>
+			<template_reference name="ping_menu_info" value="">
+			</template_reference>
+			<enum name="category" value="Economic" />
+			<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+				<enum name="quick_commands_hotkey" value="" />
+				<int name="quick_commands_priority" value="-1" />
+				<int name="quick_commands_slot_index" value="-1" />
+				<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+			</template_reference>
+			<template_reference name="relic_radial_menu_info" value="">
+			</template_reference>
+			<enum name="observer_type" value="Disabled" />
+			<group name="issuable_info">
+				<bool name="is_secondary" value="False" />
+				<instance_reference name="secondary_issuable" value="" />
+			</group>
+		</template_reference>
+		<string name="data_template" value="" />
+	</group>
+	<uniqueid name="pbgid" value="1073741860" />
+</instance>

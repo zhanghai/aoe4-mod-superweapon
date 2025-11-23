@@ -1,0 +1,26 @@
+<instance version="4" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="burst">
+			<group name="rate_of_fire">
+				<float name="max" value="100" overrideParent="True" />
+				<float name="min" value="100" overrideParent="True" />
+			</group>
+			<group name="duration">
+				<float name="max" value="2" overrideParent="True" />
+				<float name="min" value="2" overrideParent="True" />
+			</group>
+		</group>
+		<group name="range">
+			<float name="max" value="40" overrideParent="True" />
+		</group>
+		<group name="scatter">
+			<template_reference name="area_scatter_option" value="options\weapon\area_scatter_option">
+				<template_reference name="area_info" value="options\area_info_options\circle_area_option">
+					<float name="outer_radius" value="10" overrideParent="True" />
+				</template_reference>
+			</template_reference>
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="1073741907" />
+	<instance_reference name="parent_pbg" value="weapon\races\chinese\ranged\weapon_nest_of_bees_4_chi" />
+</instance>

@@ -1,0 +1,31 @@
+<instance version="4" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-2056667985" List.ParentItemID="-2056667985">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="1627760721" List.ParentItemID="1627760721">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="1549991796" List.ParentItemID="1549991796">
+					<group name="info">
+						<locstring name="help_text" value="11258381" overrideParent="True" />
+						<bool name="is_unique_to_race" value="True" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="108014063" List.ParentItemID="108014063">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="-515746888" List.ParentItemID="-515746888">
+					<instance_reference name="type" value="ebps\races\abbasid_ha_01\units\unit_giant_mangonel_abb_ha_01" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="1699780273" List.ParentItemID="1699780273">
+			<list name="squad_race_type_list">
+				<instance_reference name="squad_race_type" value="racebps\abbasid_ha_01" List.ItemID="1006821830" List.ListAction="Append" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741955" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_giant_mangonel" mod="d092883dd11f431c840d8cea71687d1b" />
+</instance>

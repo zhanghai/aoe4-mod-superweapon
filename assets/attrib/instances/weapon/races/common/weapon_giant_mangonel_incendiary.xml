@@ -1,0 +1,34 @@
+<instance version="4" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="burst">
+			<group name="rate_of_fire">
+				<float name="max" value="240" overrideParent="True" />
+				<float name="min" value="240" overrideParent="True" />
+			</group>
+		</group>
+		<group name="range">
+			<float name="max" value="40" overrideParent="True" />
+		</group>
+		<group name="scatter">
+			<template_reference name="area_scatter_option" value="options\weapon\area_scatter_option">
+				<template_reference name="area_info" value="options\area_info_options\circle_area_option">
+					<float name="outer_radius" value="16" overrideParent="True" />
+				</template_reference>
+			</template_reference>
+		</group>
+		<group name="damage">
+			<float name="max" value="4" overrideParent="True" />
+			<float name="min" value="4" overrideParent="True" />
+		</group>
+		<list name="target_type_table">
+			<group name="target_unit_type_multipliers" List.ItemID="383536766" List.ParentItemID="383536766">
+				<float name="base_damage_modifier" value="32" overrideParent="True" />
+			</group>
+			<group name="target_unit_type_multipliers" List.ItemID="-1648272858" List.ParentItemID="-1648272858">
+				<float name="base_damage_modifier" value="32" overrideParent="True" />
+			</group>
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="1073741956" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_mangonel_3_incendiary" />
+</instance>

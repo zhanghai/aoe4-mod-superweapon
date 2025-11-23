@@ -1,0 +1,35 @@
+<instance version="4" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="burst">
+			<bool name="can_burst" value="True" overrideParent="True" />
+			<group name="duration">
+				<float name="max" value="0.125" overrideParent="True" />
+				<float name="min" value="0.125" overrideParent="True" />
+			</group>
+			<group name="rate_of_fire">
+				<float name="max" value="80" overrideParent="True" />
+				<float name="min" value="80" overrideParent="True" />
+			</group>
+		</group>
+		<group name="range">
+			<float name="max" value="44" overrideParent="True" />
+		</group>
+		<group name="scatter">
+			<float name="angle_scatter" value="30" overrideParent="True" />
+		</group>
+		<group name="damage">
+			<float name="max" value="56" overrideParent="True" />
+			<float name="min" value="56" overrideParent="True" />
+		</group>
+		<list name="target_type_table">
+			<group name="target_unit_type_multipliers" List.ItemID="2066801575" List.ParentItemID="2066801575">
+				<float name="base_damage_modifier" value="48" overrideParent="True" />
+			</group>
+			<group name="target_unit_type_multipliers" List.ItemID="-298359718" List.ParentItemID="-298359718">
+				<float name="base_damage_modifier" value="260" overrideParent="True" />
+			</group>
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="1073741857" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_springald_3" />
+</instance>

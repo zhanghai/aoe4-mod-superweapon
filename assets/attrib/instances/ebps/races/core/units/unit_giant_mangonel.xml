@@ -1,0 +1,56 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1152503433" List.ParentItemID="-1152503433">
+			<float name="entity_scale" value="130" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1862202324" List.ParentItemID="1862202324">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="4000" overrideParent="True" />
+					<float name="gold" value="2000" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-609904250" List.ParentItemID="-609904250">
+			<float name="hitpoints" value="650" overrideParent="True" />
+			<float name="regeneration" value="0.1" overrideParent="True" />
+			<bool name="regeneration_disabled" value="False" overrideParent="True" />
+			<enum_table name="percentage_reduction_armor_by_damage_type">
+				<float name="Ranged" value="95" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="1782282432" List.ParentItemID="1782282432">
+			<float name="personnel_pop" value="10" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-20469707" List.ParentItemID="-20469707">
+			<locstring name="screen_name" value="11269796" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1819031405" List.ParentItemID="-1819031405">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="713460248" List.ParentItemID="713460248">
+					<list name="weapon_table" removedIds="2082400903, 1706561604">
+						<group name="weapon" List.ItemID="237902918" List.ParentItemID="237902918">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\weapon_giant_mangonel" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="1355925552" List.ParentItemID="1355925552">
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="4" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="78760080" List.ParentItemID="78760080">
+			<string name="default_animation" value="setup\idle_teardown" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\modifier_apply_ext" List.ItemID="-240347234" List.ListAction="Append">
+			<list name="modifiers">
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741914" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_mangonel_3" />
+</instance>

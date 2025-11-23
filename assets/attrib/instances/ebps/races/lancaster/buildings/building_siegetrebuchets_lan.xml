@@ -2,17 +2,33 @@
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1790715958" List.ParentItemID="1790715958">
 			<list name="requirement_table">
-				<template_reference name="required" value="requirements\required_not" List.ItemID="-8787604" List.ParentItemID="-8787604">
+				<template_reference name="required" value="requirements\required_not" List.ItemID="-2013503094" List.ParentItemID="-2013503094">
 					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-1833480180" List.ParentItemID="-1833480180">
-							<list name="requirements">
-								<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1293586649" List.ParentItemID="1293586649">
-									<instance_reference name="structure_name" value="ebps\races\lancaster\buildings\building_siegetrebuchets_lan" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
-								</template_reference>
-							</list>
+						<template_reference name="required" value="requirements\required_structure" List.ItemID="-53836531" List.ParentItemID="-53836531">
+							<instance_reference name="structure_name" value="ebps\races\lancaster\buildings\building_siegetrebuchets_lan" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
 						</template_reference>
 					</list>
 				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="194366753" List.ParentItemID="194366753">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\lancaster" List.ItemID="-1301080888" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1017881840" List.ParentItemID="-1017881840">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\always_on_abilities\lancaster\kings_college_research_speed" List.ItemID="-1267124303" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-371881673" List.ParentItemID="-371881673">
+			<list name="spawn_items">
+				<group name="spawn_item" List.ItemID="112804713" List.ParentItemID="112804713">
+					<instance_reference name="squad" value="sbps\races\lancaster\unit_springald_champion_lan" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="254314458" List.ParentItemID="254314458">
+					<instance_reference name="squad" value="sbps\races\lancaster\unit_giant_mangonel_lan" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+				</group>
 			</list>
 		</template_reference>
 	</list>

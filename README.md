@@ -6,7 +6,7 @@
 
 Add Siege Camp in The Crucible as a superweapon for the game.
 
-The Siege Camp is available at Imperial Age for 2000 wood, 2000 gold and 2000 stone. It comes with the Thunderous Barrage ability with a cost of 1000 stone and a cooldown of 150 seconds. Each player may build at most one Siege Camp.
+The Siege Camp is available at Imperial Age for 2000 wood, 2000 gold and 2000 stone. It comes with the Thunderous Barrage ability with a cost of 1000 stone and a cooldown of 150 seconds, and can produce hero siege units. Each player may build at most one Siege Camp.
 
 ## License
 
