@@ -17,7 +17,7 @@
 		</group>
 		<template_reference name="behaviour" value="options\menu\inline">
 			<int name="columns" value="1" />
-			<int name="rows" value="2" />
+			<int name="rows" value="3" />
 			<bool name="auto_exit" value="True" />
 			<int name="exclusiveness_priority" value="0" />
 		</template_reference>

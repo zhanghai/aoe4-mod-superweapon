@@ -6,6 +6,7 @@
 					<group name="info">
 						<locstring name="screen_name" value="11269794" overrideParent="True" />
 						<bool name="is_unique" value="True" overrideParent="True" />
+						<string name="selection_group" value="giant_nest_of_bees" overrideParent="True" />
 					</group>
 				</group>
 			</list>

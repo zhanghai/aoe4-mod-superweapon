@@ -1,7 +1,7 @@
 <instance version="4" description="" template="ebps">
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="811590333" List.ParentItemID="811590333">
-			<float name="entity_scale" value="130" overrideParent="True" />
+			<float name="entity_scale" value="150" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="311123701" List.ParentItemID="311123701">
 			<group name="time_cost">
@@ -24,6 +24,17 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="-927567073" List.ParentItemID="-927567073">
 			<float name="personnel_pop" value="10" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-1040511195" List.ParentItemID="-1040511195">
+			<group name="sight_package">
+				<float name="inner_height" value="501" overrideParent="True" />
+				<float name="inner_radius" value="64" overrideParent="True" />
+				<float name="outer_radius" value="64" overrideParent="True" />
+			</group>
+			<group name="stealth_detection">
+				<bool name="enabled" value="True" overrideParent="True" />
+				<float name="radius" value="64" overrideParent="True" />
+			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="639154551" List.ParentItemID="639154551">
 			<locstring name="screen_name" value="11269527" overrideParent="True" />

@@ -48,6 +48,9 @@
 				<group name="spawn_item" List.ItemID="254314458" List.ParentItemID="254314458">
 					<instance_reference name="squad" value="sbps\races\abbasid\unit_giant_mangonel_abb" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
 				</group>
+				<group name="spawn_item" List.ItemID="2045654752" List.ParentItemID="2045654752">
+					<instance_reference name="squad" value="sbps\races\abbasid\unit_supa_ram_abb" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+				</group>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="-177460102" List.ListAction="Append">

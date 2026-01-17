@@ -39,6 +39,9 @@
 				<group name="spawn_item" List.ItemID="254314458" List.ParentItemID="254314458">
 					<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_giant_mangonel_mon_ha_gol" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
 				</group>
+				<group name="spawn_item" List.ItemID="2045654752" List.ParentItemID="2045654752">
+					<instance_reference name="squad" value="sbps\races\mongol_ha_gol\unit_supa_ram_mon_ha_gol" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+				</group>
 			</list>
 			<state_tree_node name="production_item_completed_openingbranch" value="building_production_item_completed\Master\building_production_item_complete\building_production_item_complete_siege_mon_ha_gol" overrideParent="True" />
 		</template_reference>

@@ -5,6 +5,8 @@
 				<group name="race_data" List.ItemID="1549991796" List.ParentItemID="1549991796">
 					<group name="info">
 						<locstring name="screen_name" value="11269796" overrideParent="True" />
+						<string name="selection_group" value="giant_catapult" overrideParent="True" />
+						<bool name="is_unique" value="True" overrideParent="True" />
 					</group>
 				</group>
 			</list>

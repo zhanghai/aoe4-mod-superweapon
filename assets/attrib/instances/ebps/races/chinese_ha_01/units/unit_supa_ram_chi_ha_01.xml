@@ -1,0 +1,24 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1410792167" List.ParentItemID="-1410792167">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\chinese\units\unit_ram_3_chi" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1903432945" List.ParentItemID="-1903432945">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\chinese_ha_01" List.ItemID="1965816327" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="190341173" List.ParentItemID="190341173">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="233382172" List.ParentItemID="233382172">
+					<group name="tier" List.ItemID="-991318651" List.ParentItemID="-991318651">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\units\tier3_ram_chi" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741968" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_supa_ram" mod="d092883dd11f431c840d8cea71687d1b" />
+</instance>

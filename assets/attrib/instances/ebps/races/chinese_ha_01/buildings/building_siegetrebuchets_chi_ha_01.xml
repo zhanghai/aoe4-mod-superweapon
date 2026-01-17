@@ -46,6 +46,9 @@
 					<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_giant_nest_of_bees_chi_ha_01" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
 					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_siegetrebuchets\produce_siegetrebuchets_giant_nest_of_bees_chi" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
 				</group>
+				<group name="spawn_item" List.ItemID="2045654752" List.ParentItemID="2045654752">
+					<instance_reference name="squad" value="sbps\races\chinese_ha_01\unit_supa_ram_chi_ha_01" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+				</group>
 			</list>
 			<state_tree_node name="production_item_completed_openingbranch" value="building_production_item_completed_chi" overrideParent="True" />
 		</template_reference>

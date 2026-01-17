@@ -22,6 +22,17 @@
 		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="-1856811533" List.ParentItemID="-1856811533">
 			<float name="personnel_pop" value="10" overrideParent="True" />
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-1432602271" List.ParentItemID="-1432602271">
+			<group name="sight_package">
+				<float name="inner_height" value="501" overrideParent="True" />
+				<float name="inner_radius" value="64" overrideParent="True" />
+				<float name="outer_radius" value="64" overrideParent="True" />
+			</group>
+			<group name="stealth_detection">
+				<bool name="enabled" value="True" overrideParent="True" />
+				<float name="radius" value="64" overrideParent="True" />
+			</group>
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1978278333" List.ParentItemID="1978278333">
 			<list name="race_type_list">
 				<instance_reference name="race_type" value="racebps\chinese" List.ItemID="-751238559" List.ListAction="Append" />

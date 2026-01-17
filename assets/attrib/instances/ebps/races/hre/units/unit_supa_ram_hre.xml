@@ -1,0 +1,40 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1410792167" List.ParentItemID="-1410792167">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\hre\units\unit_ram_3_hre" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1903432945" List.ParentItemID="-1903432945">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\hre" List.ItemID="-1761874977" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="190341173" List.ParentItemID="190341173">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="233382172" List.ParentItemID="233382172">
+					<group name="tier" List.ItemID="-991318651" List.ParentItemID="-991318651">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\hre\units\tier3_ram_hre" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="1161182516" List.ParentItemID="1161182516">
+			<list name="type_list">
+				<group name="type" List.ItemID="2131907614" List.ListAction="Append">
+					<enum name="interaction_type" value="inspire_hre" overrideParent="True" />
+					<int name="prefer_number" value="1" overrideParent="True" />
+					<int name="max_number" value="1" overrideParent="True" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none" overrideParent="True">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-559472318" List.ParentItemID="-559472318">
+			<instance_reference name="schema" value="statemodel_schema\units\civilizations\hre\ram_hre" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741971" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_supa_ram" mod="d092883dd11f431c840d8cea71687d1b" />
+</instance>

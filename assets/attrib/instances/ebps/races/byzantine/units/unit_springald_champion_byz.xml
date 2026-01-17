@@ -24,6 +24,9 @@
 					</list>
 				</group>
 			</list>
+			<template_reference name="kill_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="on_kill_byz" overrideParent="True" />
+			</template_reference>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-766205460" List.ParentItemID="-766205460">
 			<list name="tier_group_list">

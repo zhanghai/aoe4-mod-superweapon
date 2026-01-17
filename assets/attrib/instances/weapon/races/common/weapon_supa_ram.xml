@@ -1,0 +1,59 @@
+<instance version="4" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="area_effect">
+			<template_reference name="area_info" value="options\area_info_options\circle_area_option" overrideParent="True">
+				<float name="outer_radius" value="16" overrideParent="True" />
+				<float name="inner_radius" value="0" />
+				<bool name="is_two_dimensional" value="True" />
+				<enum name="dynamic_radius_type" value="fixed" />
+			</template_reference>
+			<group name="damage">
+				<float name="far" value="0.25" overrideParent="True" />
+				<float name="mid" value="0.5" overrideParent="True" />
+			</group>
+			<group name="distance">
+				<float name="far" value="16" overrideParent="True" />
+				<float name="near" value="1" overrideParent="True" />
+				<float name="mid" value="8" overrideParent="True" />
+			</group>
+		</group>
+		<group name="cooldown">
+			<group name="duration">
+				<float name="max" value="2" overrideParent="True" />
+				<float name="min" value="2" overrideParent="True" />
+			</group>
+		</group>
+		<group name="damage">
+			<float name="max" value="100" overrideParent="True" />
+			<float name="min" value="100" overrideParent="True" />
+		</group>
+		<group name="range">
+			<float name="max" value="4" overrideParent="True" />
+			<group name="distance">
+				<float name="near" value="-1" overrideParent="True" />
+				<float name="far" value="-1" overrideParent="True" />
+				<float name="mid" value="-1" overrideParent="True" />
+			</group>
+		</group>
+		<list name="target_type_table">
+			<group name="target_unit_type_multipliers" List.ItemID="1150535001" List.ParentItemID="1150535001">
+				<float name="base_damage_modifier" value="3000" overrideParent="True" />
+			</group>
+			<group name="target_unit_type_multipliers" List.ItemID="660658950" List.ListAction="Append">
+				<enum name="unit_type" value="building" overrideParent="True" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="1" />
+					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+				<float name="base_damage_modifier" value="1900" overrideParent="True" />
+			</group>
+		</list>
+		<group name="behaviour">
+			<enum name="hit_pos_behaviour" value="normal_pos" overrideParent="True" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="1073741958" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_ram_3" />
+</instance>

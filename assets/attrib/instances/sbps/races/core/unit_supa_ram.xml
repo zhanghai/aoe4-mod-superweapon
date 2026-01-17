@@ -1,0 +1,52 @@
+<instance version="4" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="-1780894594" List.ParentItemID="-1780894594">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="2005613114" List.ParentItemID="2005613114">
+					<group name="info">
+						<string name="sound" value="sfx_ui_produce_unit_click" overrideParent="True" />
+						<locstring name="screen_name" value="11270600" overrideParent="True" />
+						<string name="selection_group" value="supa_ram" overrideParent="True" />
+						<bool name="is_unique" value="True" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="1359307790" List.ParentItemID="1359307790">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="-9673855" List.ParentItemID="-9673855">
+					<instance_reference name="type" value="ebps\races\core\units\unit_supa_ram" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="-643919510" List.ParentItemID="-643919510">
+			<list name="requirement_table" removedIds="1598233068">
+				<template_reference name="required" value="requirements\required_cap" List.ItemID="574460721" List.ListAction="Append">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<float name="max_cap" value="1" overrideParent="True" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext" List.ItemID="2076078729" List.ParentItemID="2076078729">
+			<list name="abilities" removedIds="-533210619">
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" List.ItemID="307646007" List.ParentItemID="307646007">
+			<group name="squad_speech_parameters">
+				<string name="squad_class_code" value="seige" overrideParent="True" />
+				<string name="squad_unit_code" value="mounted" overrideParent="True" />
+			</group>
+			<list name="age_mapping">
+				<int name="age_number" value="2" overrideParent="True" List.ItemID="1240514215" List.ParentItemID="1240514215" />
+				<int name="age_number" value="2" overrideParent="True" List.ItemID="1737659886" List.ParentItemID="1737659886" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741960" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_ram_3" />
+</instance>

@@ -1,0 +1,21 @@
+<instance version="4" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-2056667985" List.ParentItemID="-2056667985">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="1359307790" List.ParentItemID="1359307790">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="-9673855" List.ParentItemID="-9673855">
+					<instance_reference name="type" value="ebps\races\sultanate\units\unit_supa_ram_sul" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="516946195" List.ParentItemID="516946195">
+			<list name="squad_race_type_list">
+				<instance_reference name="squad_race_type" value="racebps\sultanate" List.ItemID="-868020300" List.ListAction="Append" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073742004" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_supa_ram" mod="d092883dd11f431c840d8cea71687d1b" />
+</instance>
