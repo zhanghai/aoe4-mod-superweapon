@@ -36,9 +36,23 @@
 		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-64285297" List.ParentItemID="-64285297">
 			<file name="minimap_icon" value="minimap\wonder" overrideParent="True" />
 			<bool name="is_unique_to_race" value="False" overrideParent="True" />
+			<float name="minimap_icon_scale" value="0.45" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1253681687" List.ParentItemID="1253681687">
+			<string name="tooltip_data_template" value="BuildingMilitaryDataTemplate" overrideParent="True" />
+			<group name="on_construction_complete_state_tree_refs">
+				<string name="while_construction_complete_entity_state_tree_ref" value="building_construction_complete\buildings\siege_workshop_construction_complete" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="698971" List.ParentItemID="698971">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="-2075565931" List.ParentItemID="-2075565931">
+					<string name="state_tree" value="building_action_apply\buildings\siege_workshop_action_apply" overrideParent="True" />
+				</group>
+			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="194366753" List.ParentItemID="194366753">
-			<list name="unit_type_list">
+			<list name="unit_type_list" removedIds="248694817, 1291170097">
 				<enum name="unit_type" value="military_only_production" List.ItemID="-816370559" List.ListAction="Append" />
 				<enum name="unit_type" value="military_production_building" List.ItemID="930013192" List.ListAction="Append" />
 				<enum name="unit_type" value="production_building" List.ItemID="-2063971532" List.ListAction="Append" />
