@@ -3,16 +3,16 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="108014063" List.ParentItemID="108014063">
 			<list name="unit_list">
 				<group name="loadout_data" List.ItemID="-515746888" List.ParentItemID="-515746888">
-					<instance_reference name="type" value="ebps\races\chinese_ha_01\units\unit_giant_nest_of_bees_chi_ha_01" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+					<instance_reference name="type" value="ebps\races\jin_dynasty\units\unit_giant_nest_of_bees_jin" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
 				</group>
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="1699780273" List.ParentItemID="1699780273">
 			<list name="squad_race_type_list">
-				<instance_reference name="squad_race_type" value="racebps\chinese_ha_01" overrideParent="True" List.ItemID="-834850970" List.ParentItemID="-834850970" />
+				<instance_reference name="squad_race_type" value="racebps\jin_dynasty" overrideParent="True" List.ItemID="-834850970" List.ParentItemID="-834850970" />
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073741911" />
+	<uniqueid name="pbgid" value="1073742011" />
 	<instance_reference name="parent_pbg" value="sbps\races\chinese\unit_giant_nest_of_bees_chi" mod="d092883dd11f431c840d8cea71687d1b" />
 </instance>

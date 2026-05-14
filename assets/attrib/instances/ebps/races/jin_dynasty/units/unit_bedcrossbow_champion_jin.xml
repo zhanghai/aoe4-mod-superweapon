@@ -1,0 +1,61 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="811590333" List.ParentItemID="811590333">
+			<float name="entity_scale" value="150" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="311123701" List.ParentItemID="311123701">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="1250" overrideParent="True" />
+					<float name="gold" value="1000" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1210690469" List.ParentItemID="-1210690469">
+			<float name="hitpoints" value="550" overrideParent="True" />
+			<enum_table name="percentage_reduction_armor_by_damage_type">
+				<float name="Ranged" value="95" overrideParent="True" />
+			</enum_table>
+			<float name="regeneration" value="0.2" overrideParent="True" />
+			<bool name="regeneration_disabled" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="-927567073" List.ParentItemID="-927567073">
+			<float name="personnel_pop" value="10" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-1040511195" List.ParentItemID="-1040511195">
+			<group name="sight_package">
+				<float name="inner_height" value="501" overrideParent="True" />
+				<float name="inner_radius" value="64" overrideParent="True" />
+				<float name="outer_radius" value="64" overrideParent="True" />
+			</group>
+			<group name="stealth_detection">
+				<bool name="enabled" value="True" overrideParent="True" />
+				<float name="radius" value="64" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="639154551" List.ParentItemID="639154551">
+			<locstring name="screen_name" value="11269527" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-587241534" List.ParentItemID="-587241534">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-1624532552" List.ParentItemID="-1624532552">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-746170489" List.ParentItemID="-746170489">
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\weapon_springald_champion" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-1763078206" List.ParentItemID="-1763078206">
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="4" overrideParent="True" />
+			</enum_table>
+			<instance_reference name="navigation_agent_info" value="navigation\agent_info\default_siege" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073742010" />
+	<instance_reference name="parent_pbg" value="ebps\races\jin_dynasty\units\siege\unit_bedcrossbow_4_jin" />
+</instance>

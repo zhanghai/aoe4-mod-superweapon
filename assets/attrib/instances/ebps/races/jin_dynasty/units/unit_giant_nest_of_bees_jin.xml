@@ -1,0 +1,29 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1564013" List.ParentItemID="-1564013">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\jin_dynasty\units\siege\tier3_nest_of_bees_jin" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1844382716" List.ParentItemID="1844382716">
+			<state_tree_node name="death_action_tree" value="on_death_jin\select_unit" overrideParent="True" />
+			<template_reference name="on_received_damage_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="porcupine_nestofbees_jin\spawn_retaliate" overrideParent="True" />
+			</template_reference>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1978278333" List.ParentItemID="1978278333">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\jin_dynasty" overrideParent="True" List.ItemID="-751238559" List.ParentItemID="-751238559" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="2101746355" List.ParentItemID="2101746355">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="1592922359" List.ParentItemID="1592922359">
+					<group name="tier" List.ItemID="-193960431" List.ParentItemID="-193960431">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\jin_dynasty\units\siege\tier3_nest_of_bees_jin" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073742008" />
+	<instance_reference name="parent_pbg" value="ebps\races\chinese\units\unit_giant_nest_of_bees_chi" mod="d092883dd11f431c840d8cea71687d1b" />
+</instance>

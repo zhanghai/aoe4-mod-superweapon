@@ -1,0 +1,40 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1790715958" List.ParentItemID="1790715958">
+			<list name="requirement_table">
+				<template_reference name="required" value="requirements\required_not" List.ItemID="-2013503094" List.ParentItemID="-2013503094">
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_structure" List.ItemID="-53836531" List.ParentItemID="-53836531">
+							<instance_reference name="structure_name" value="ebps\races\jin_dynasty\buildings\building_siegetrebuchets_jin" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="194366753" List.ParentItemID="194366753">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\jin_dynasty" List.ItemID="-535248479" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="912191370" List.ParentItemID="912191370">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\chinese\unit_siege_chi" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-371881673" List.ParentItemID="-371881673">
+			<list name="spawn_items">
+				<group name="spawn_item" List.ItemID="112804713" List.ParentItemID="112804713">
+					<instance_reference name="squad" value="sbps\races\jin_dynasty\unit_bedcrossbow_champion_jin" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="254314458" List.ParentItemID="254314458">
+					<instance_reference name="squad" value="sbps\races\jin_dynasty\unit_giant_nest_of_bees_jin" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_siegetrebuchets\produce_siegetrebuchets_giant_nest_of_bees_chi" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="2045654752" List.ParentItemID="2045654752">
+					<instance_reference name="squad" value="sbps\races\jin_dynasty\unit_supa_ram_jin" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+				</group>
+			</list>
+			<state_tree_node name="production_item_completed_openingbranch" value="building_production_item_completed_chi" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073742007" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_siegetrebuchets_east" mod="d092883dd11f431c840d8cea71687d1b" />
+</instance>

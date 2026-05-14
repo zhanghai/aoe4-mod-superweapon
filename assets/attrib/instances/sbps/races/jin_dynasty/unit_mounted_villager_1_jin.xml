@@ -1,11 +1,20 @@
-<instance version="4" override_type="merge" description="Chinese Villager" template="sbps">
+<instance version="4" description="Chinese Villager" template="sbps">
 	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="443384137" List.ParentItemID="443384137">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="422230052" List.ParentItemID="422230052">
+					<group name="info">
+						<locstring name="help_text" comment="If editing this string, please ensure all Civs get relevant changes. The Mongol, English, and Rus (as of Feb 2020) have different text." />
+					</group>
+				</group>
+			</list>
+		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_engineer_ext" List.ItemID="851310113" List.ParentItemID="851310113">
 			<list name="construction_groups">
-				<group name="construction_group" List.ItemID="-1178282786" List.ParentItemID="-1178282786">
+				<group name="construction_group" List.ItemID="886437785" List.ParentItemID="886437785">
 					<list name="construction_items">
-						<group name="construction_item" comment="Siege Camp" List.ItemID="417320127" List.ListAction="Append">
-							<instance_reference name="ebp" value="ebps\races\chinese\buildings\building_siegetrebuchets_chi" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+						<group name="construction_item" comment="Siege Camp" List.ItemID="1068482462" List.ListAction="Append">
+							<instance_reference name="ebp" value="ebps\races\jin_dynasty\buildings\building_siegetrebuchets_jin" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
 							<group name="ui_position">
 								<int name="ui_position_row" value="2" overrideParent="True" />
 								<int name="ui_position_column" value="1" overrideParent="True" />
@@ -62,6 +71,6 @@
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="137283" />
-	<instance_reference name="parent_pbg" value="sbps\races\chinese\unit_villager_1_chi" />
+	<uniqueid name="pbgid" value="9004039" />
+	<instance_reference name="parent_pbg" value="sbps\races\jin_dynasty\unit_mounted_villager_1_jin" />
 </instance>

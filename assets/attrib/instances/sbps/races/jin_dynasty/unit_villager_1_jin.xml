@@ -1,11 +1,11 @@
-<instance version="4" override_type="merge" description="Chinese Villager" template="sbps">
+<instance version="4" description="Chinese Villager" template="sbps">
 	<list name="extensions">
 		<template_reference name="squadexts" value="sbpextensions\squad_engineer_ext" List.ItemID="851310113" List.ParentItemID="851310113">
 			<list name="construction_groups">
 				<group name="construction_group" List.ItemID="-1178282786" List.ParentItemID="-1178282786">
 					<list name="construction_items">
-						<group name="construction_item" comment="Siege Camp" List.ItemID="417320127" List.ListAction="Append">
-							<instance_reference name="ebp" value="ebps\races\chinese\buildings\building_siegetrebuchets_chi" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
+						<group name="construction_item" comment="Siege Camp" List.ItemID="-590119515" List.ListAction="Append">
+							<instance_reference name="ebp" value="ebps\races\jin_dynasty\buildings\building_siegetrebuchets_jin" mod="d092883dd11f431c840d8cea71687d1b" overrideParent="True" />
 							<group name="ui_position">
 								<int name="ui_position_row" value="2" overrideParent="True" />
 								<int name="ui_position_column" value="1" overrideParent="True" />
@@ -62,6 +62,6 @@
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="137283" />
-	<instance_reference name="parent_pbg" value="sbps\races\chinese\unit_villager_1_chi" />
+	<uniqueid name="pbgid" value="9003964" />
+	<instance_reference name="parent_pbg" value="sbps\races\jin_dynasty\unit_villager_1_jin" />
 </instance>

@@ -31,6 +31,11 @@
 				</template_reference>
 			</list>
 		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="1699780273" List.ParentItemID="1699780273">
+			<list name="squad_race_type_list">
+				<instance_reference name="squad_race_type" value="racebps\chinese" List.ItemID="-834850970" List.ListAction="Append" />
+			</list>
+		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="1073741910" />
 	<instance_reference name="parent_pbg" value="sbps\races\chinese\unit_nest_of_bees_4_chi" />
